@@ -153,6 +153,13 @@ int X509_REQ_print_ex(BIO *bp, X509_REQ *x, unsigned long nmflags,
                     if (BIO_puts(bp, "\n") <= 0)
                         goto err;
                     break;
+                case V_ASN1_OCTET_STRING:
+                case V_ASN1_BIT_STRING:
+                    if (BIO_puts(bp, "\n") <= 0)
+                        goto err;
+                    if (!ASN1_buf_print(bp, bs->data, bs->length, 16))
+                        goto err;
+                    break;
                 default:
                     if (BIO_puts(bp, "unable to print attribute\n") <= 0)
                         goto err;

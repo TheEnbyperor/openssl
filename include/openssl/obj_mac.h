@@ -5757,6 +5757,21 @@
 #define LN_zstd         "Zstandard compression"
 #define NID_zstd                1289
 
+#define SN_cabf         "cabf"
+#define LN_cabf         "CA/Browser Forum"
+#define NID_cabf                1321
+#define OBJ_cabf                OBJ_international_organizations,140L
+
+#define SN_cabf_caSigningNonce          "cabf-caSigningNonce"
+#define LN_cabf_caSigningNonce          "CA/Browser Forum CA Signing Nonce"
+#define NID_cabf_caSigningNonce         1322
+#define OBJ_cabf_caSigningNonce         OBJ_cabf,41L
+
+#define SN_cabf_applicantSigningNonce           "cabf-applicantSigningNonce"
+#define LN_cabf_applicantSigningNonce           "CA/Browser Forum Applicant Signing Nonce"
+#define NID_cabf_applicantSigningNonce          1323
+#define OBJ_cabf_applicantSigningNonce          OBJ_cabf,42L
+
 #endif /* OPENSSL_OBJ_MAC_H */
 
 #ifndef OPENSSL_NO_DEPRECATED_3_0

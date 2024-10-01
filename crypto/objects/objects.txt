@@ -1864,3 +1864,7 @@ oracle 746875 1 1 : oracle-jdk-trustedkeyusage : Trusted key usage (Oracle)
 # NID for compression
                             : brotli : Brotli compression
 			    : zstd : Zstandard compression
+
+international-organizations 140 : cabf : CA/Browser Forum
+cabf 41 : cabf-caSigningNonce : CA/Browser Forum CA Signing Nonce
+cabf 42 : cabf-applicantSigningNonce : CA/Browser Forum Applicant Signing Nonce
